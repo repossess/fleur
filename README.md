@@ -9,4 +9,4 @@ curl -o fleur.py https://raw.githubusercontent.com/repossess/fleur/main/loader.p
 ```
 
 # showcase
-![explorer](https://github.com/repossess/fleur/blob/main/images/cmd.png?raw=true)
+![cmd](https://github.com/repossess/fleur/blob/main/dependencies/cmd.png?raw=true)
